@@ -21,6 +21,7 @@ class info:
         self.Medicondition = []
         self.Mediother =[]
         self.Sig = []
+        self.Fax = []
 
     def up_date(self,date):
         if date =="":
@@ -147,3 +148,8 @@ class info:
         else:
             self.Sig.append(sig)
 
+    def up_fax(self,fax):
+        if fax == "":
+            self.Fax.append("NA")
+        else:
+            self.Fax.append(fax)
